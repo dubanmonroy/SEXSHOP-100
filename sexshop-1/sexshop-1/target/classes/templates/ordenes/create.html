@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crear Orden</title>
+</head>
+<body>
+    <h1>Crear Nueva Orden</h1>
+    <form action="#" th:action="@{/api/ordenes}" method="post">
+        <input type="text" name="clienteId" placeholder="ID del Cliente" required />
+        <input type="text" name="productoId" placeholder="ID del Producto" required />
+        <input type="number" name="cantidad" placeholder="Cantidad" required />
+        <button type="submit">Crear</button>
+    </form>
+    <a href="/ordenes">Volver a la lista</a>
+</body>
+</html>

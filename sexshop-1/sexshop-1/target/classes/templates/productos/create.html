@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crear Producto</title>
+</head>
+<body>
+    <h1>Crear Nuevo Producto</h1>
+    <form action="#" th:action="@{/api/productos}" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="descripcion" placeholder="Descripción" required />
+        <input type="number" name="precio" placeholder="Precio" required step="0.01" />
+        <input type="text" name="categoriaId" placeholder="ID de la categoría" required />
+        <button type="submit">Crear</button>
+    </form>
+    <a href="/productos">Volver a la lista</a>
+</body>
+</html>

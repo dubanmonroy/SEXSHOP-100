@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Editar Orden</title>
+</head>
+<body>
+    <h1>Editar Orden</h1>
+    <form action="#" th:action="@{/api/ordenes/{id}(id=${orden.id})}" method="post">
+        <input type="text" name="clienteId" placeholder="ID del Cliente" th:value="${orden.clienteId}" required />
+        <input type="text" name="productoId" placeholder="ID del Producto" th:value="${orden.productoId}" required/>
+        <input type="number" name="cantidad" placeholder="Cantidad" th:value="${orden.cantidad}" required />
+        <input type="hidden" name="_method" value="put"/>
+        <button type="submit">Actualizar</button>
+    </form>
+    <a href="/ordenes">Volver a la lista</a>
+</body>
+</html>
+
