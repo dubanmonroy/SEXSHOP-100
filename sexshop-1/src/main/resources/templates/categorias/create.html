@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crear Categoría</title>
+</head>
+<body>
+    <h1>Crear Nueva Categoría</h1>
+    <form action="#" th:action="@{/api/categorias}" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="descripcion" placeholder="Descripción" required />
+        <button type="submit">Crear</button>
+    </form>
+    <a href="/categorias">Volver a la lista</a>
+</body>
+</html>
